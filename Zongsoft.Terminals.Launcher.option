@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<options>
+	<option path="/Diagnostics">
+		<tracer tracer.type="Zongsoft.Diagnostics.Configuration.TracerElement, Zongsoft.CoreLibrary" enabled="true">
+			<listeners>
+				<listener name="FileLogTraceListener" type="Zongsoft.Diagnostics.FileLogTraceListener, Zongsoft.CoreLibrary" />
+			</listeners>
+		</tracer>
+	</option>
+
+	<option path="/Communication/Net">
+		<ftpServer ftpServer.type="Zongsoft.Communication.Net.Configuration.FtpServerOptionElement, Zongsoft.CoreLibrary">
+			<users>
+				<user name="admin" password="admin" readOnly="false" homeDirectory="D:\ftp\admin" />
+				<user name="anonymous" password="" readOnly="false" homeDirectory="D:\ftp\anonymous" />
+			</users>
+		</ftpServer>
+	</option>
+</options>

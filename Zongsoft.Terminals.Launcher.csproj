@@ -10,8 +10,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Zongsoft.Terminals.Launcher</RootNamespace>
     <AssemblyName>Zongsoft.Terminals.Launcher</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -23,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -32,6 +34,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -42,18 +45,20 @@
     <Reference Include="Zongsoft.CoreLibrary, Version=3.1.1310.37512, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Zongsoft.CoreLibrary\bin\Debug\Zongsoft.CoreLibrary.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Zongsoft.Plugins, Version=3.2.14127.26986, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Zongsoft.Plugins\bin\Debug\Zongsoft.Plugins.dll</HintPath>
-    </Reference>
-    <Reference Include="Zongsoft.Plugins.Terminals, Version=3.2.14127.9317, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Zongsoft.Plugins.Terminals\bin\Debug\Zongsoft.Plugins.Terminals.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Zongsoft.Terminals, Version=3.1.1310.1637, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Zongsoft.Terminals\bin\Debug\Zongsoft.Terminals.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Zongsoft.Terminals.Plugins">
+      <HintPath>..\Zongsoft.Terminals.Plugins\bin\Debug\Zongsoft.Terminals.Plugins.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +66,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="Zongsoft.Terminals.Launcher.option">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>

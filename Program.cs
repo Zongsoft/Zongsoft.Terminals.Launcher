@@ -7,7 +7,7 @@ namespace Zongsoft.Terminals.Launcher
 	{
 		static void Main(string[] args)
 		{
-			Zongsoft.Plugins.Application.Start(Zongsoft.Plugins.Terminals.ApplicationContext.Current, args);
+			Zongsoft.Plugins.Application.Start(Zongsoft.Terminals.Plugins.ApplicationContext.Current, args);
 		}
 	}
 }

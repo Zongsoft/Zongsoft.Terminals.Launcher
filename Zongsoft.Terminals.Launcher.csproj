@@ -44,21 +44,21 @@
     <Reference Include="System.Xml" />
     <Reference Include="Zongsoft.CoreLibrary, Version=3.1.1310.37512, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Zongsoft.CoreLibrary\bin\$(Configuration)\Zongsoft.CoreLibrary.dll</HintPath>
+      <HintPath>..\Zongsoft.CoreLibrary\src\bin\$(Configuration)\Zongsoft.CoreLibrary.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Zongsoft.Plugins, Version=3.2.14127.26986, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Zongsoft.Plugins\bin\$(Configuration)\Zongsoft.Plugins.dll</HintPath>
+      <HintPath>..\Zongsoft.Plugins\src\bin\$(Configuration)\Zongsoft.Plugins.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Zongsoft.Terminals, Version=3.1.1310.1637, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Zongsoft.Terminals\bin\$(Configuration)\Zongsoft.Terminals.dll</HintPath>
+      <HintPath>..\Zongsoft.Terminals\src\bin\$(Configuration)\Zongsoft.Terminals.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Zongsoft.Terminals.Plugins">
-      <HintPath>..\Zongsoft.Terminals.Plugins\bin\$(Configuration)\Zongsoft.Terminals.Plugins.dll</HintPath>
+      <HintPath>..\Zongsoft.Terminals.Plugins\src\bin\$(Configuration)\Zongsoft.Terminals.Plugins.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

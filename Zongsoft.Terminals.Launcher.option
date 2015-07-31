@@ -23,7 +23,7 @@
 				<predication minLevel="Warn" />
 
 				<properties>
-					<property name="FilePath" value="logs/abc.log" />
+					<property name="FilePath" value="logs/${binding:timestamp#yyyyMM}/${binding:source}[{sequence}].log" />
 				</properties>
 			</handler>
 		</logger>

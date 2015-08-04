@@ -20,7 +20,7 @@
 			</handler>
 
 			<handler name="File" type="Zongsoft.Diagnostics.TextFileLogger, Zongsoft.CoreLibrary"
-			         filePath="logs/${binding:timestamp#yyyyMM}/${binding:source}[{sequence}].log">
+			         filePath="~/logs/${binding:timestamp#yyyyMM}/${binding:source}[{sequence}].log">
 				<predication minLevel="Warn" />
 			</handler>
 		</logger>

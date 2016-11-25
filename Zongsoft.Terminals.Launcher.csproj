@@ -60,9 +60,13 @@
   <ItemGroup>
     <None Include="..\Zongsoft.Plugins\Main.plugin">
       <Link>plugins\Main.plugin</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />
-    <None Include="plugins\Terminals.plugin" />
+    <None Include="plugins\Terminals.plugin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Zongsoft.Terminals.Launcher.option">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>

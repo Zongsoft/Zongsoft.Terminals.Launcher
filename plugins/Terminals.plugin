@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<plugin name="Zongsoft.Terminals"
+        title="Zongsoft Terminals Plugin"
+        author="Popeye Zhong(zongsoft@gmail.com)"
+        version="4.4.0.1611"
+        copyright="Copyright (C) 2010-2016 Zongsoft Corporation. All rights reserved."
+        description="Modified Date: 2016-11 by Popeye Zhong">
+
+	<manifest>
+		<dependencies>
+			<dependency name="Main" />
+		</dependencies>
+	</manifest>
+
+	<extension path="/Workbench">
+		<!-- 将默认的命令执行器替换成终端命令执行器 -->
+		<object name="Executor" type="Zongsoft.Terminals.TerminalCommandExecutor, Zongsoft.CoreLibrary">
+			<object.property name="Default" type="Zongsoft.Services.CommandExecutor, Zongsoft.CoreLibrary" value="{path:.}" />
+		</object>
+	</extension>
+
+	<extension path="/Workbench/Executor/Commands">
+		<object name="Exit" type="Zongsoft.Terminals.Commands.ExitCommand, Zongsoft.CoreLibrary" />
+		<object name="Clear" type="Zongsoft.Terminals.Commands.ClearCommand, Zongsoft.CoreLibrary" />
+		<object name="Shell" type="Zongsoft.Terminals.Commands.ShellCommand, Zongsoft.CoreLibrary" />
+	</extension>
+</plugin>

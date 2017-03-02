@@ -15,7 +15,7 @@
 	<extension path="/Workbench">
 		<!-- 将默认的命令执行器替换成终端命令执行器 -->
 		<object name="Executor" type="Zongsoft.Terminals.TerminalCommandExecutor, Zongsoft.CoreLibrary">
-			<object.property name="Default" type="Zongsoft.Services.CommandExecutor, Zongsoft.CoreLibrary" value="{path:.}" />
+			<object.property name="Default" target="{type:Zongsoft.Services.CommandExecutor, Zongsoft.CoreLibrary}" value="{path:.}" />
 		</object>
 	</extension>
 

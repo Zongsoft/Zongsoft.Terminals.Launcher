@@ -23,13 +23,4 @@
 			</handler>
 		</logger>
 	</option>
-
-	<option path="/Communication/Net">
-		<ftpServer ftpServer.type="Zongsoft.Communication.Net.Configuration.FtpServerOptionElement, Zongsoft.CoreLibrary">
-			<users>
-				<user name="admin" password="admin" readOnly="false" homeDirectory="D:\ftp\admin" />
-				<user name="anonymous" password="" readOnly="false" homeDirectory="D:\ftp\anonymous" />
-			</users>
-		</ftpServer>
-	</option>
 </options>

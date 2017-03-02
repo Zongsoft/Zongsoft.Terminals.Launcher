@@ -2,9 +2,9 @@
 <plugin name="Zongsoft.Terminals"
         title="Zongsoft Terminals Plugin"
         author="Popeye Zhong(zongsoft@gmail.com)"
-        version="4.4.0.1611"
-        copyright="Copyright (C) 2010-2016 Zongsoft Corporation. All rights reserved."
-        description="Modified Date: 2016-11 by Popeye Zhong">
+        version="4.4.0.1703"
+        copyright="Copyright (C) 2010-2017 Zongsoft Corporation. All rights reserved."
+        description="Modified Date: 2017-03 by Popeye Zhong">
 
 	<manifest>
 		<dependencies>
@@ -19,6 +19,7 @@
 		</object>
 	</extension>
 
+	<!-- 挂在终端命令 -->
 	<extension path="/Workbench/Executor/Commands">
 		<object name="Exit" type="Zongsoft.Terminals.Commands.ExitCommand, Zongsoft.CoreLibrary" />
 		<object name="Clear" type="Zongsoft.Terminals.Commands.ClearCommand, Zongsoft.CoreLibrary" />

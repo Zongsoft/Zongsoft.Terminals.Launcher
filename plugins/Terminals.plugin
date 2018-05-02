@@ -13,8 +13,8 @@
 	</manifest>
 
 	<extension path="/Workbench">
-		<!-- 将默认的命令执行器替换成终端命令执行器 -->
-		<object name="Executor" type="Zongsoft.Terminals.TerminalCommandExecutor, Zongsoft.CoreLibrary">
+		<!-- 将默认的命令执行器替换成控制台终端命令执行器 -->
+		<object name="Executor" value="{static:Zongsoft.Terminals.TerminalCommandExecutor.Console, Zongsoft.CoreLibrary}">
 			<object.property name="Default" target="{type:Zongsoft.Services.CommandExecutor, Zongsoft.CoreLibrary}" value="{path:.}" />
 		</object>
 	</extension>

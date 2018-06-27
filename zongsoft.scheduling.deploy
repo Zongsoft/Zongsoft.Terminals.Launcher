@@ -1,0 +1,5 @@
+[bin $(Edition) plugins Zongsoft.Scheduling]
+/Zongsoft/Zongsoft.Scheduling/.deploy
+
+[bin $(Edition) plugins Zongsoft.Scheduling]
+/Zongsoft/Zongsoft.Scheduling/examples/.deploy

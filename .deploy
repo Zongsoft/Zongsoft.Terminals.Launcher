@@ -10,8 +10,9 @@
 
 [bin $(Edition) plugins Zongsoft Data]
 /Zongsoft/Zongsoft.Data/.deploy
-
-[bin $(Edition) plugins Zongsoft Data]
+[bin $(Edition) plugins Zongsoft Data mssql]
+/Zongsoft/Zongsoft.Data/drivers/mssql.deploy
+[bin $(Edition) plugins Zongsoft Data mysql]
 /Zongsoft/Zongsoft.Data/drivers/mysql.deploy
 
 [bin $(Edition) plugins Zongsoft Security]

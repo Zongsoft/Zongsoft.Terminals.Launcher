@@ -5,6 +5,8 @@
 README: [English](https://github.com/Zongsoft/Zongsoft.Terminals.Launcher/blob/master/README.md) | [简体中文](https://github.com/Zongsoft/Zongsoft.Terminals.Launcher/blob/master/README-zh_CN.md)
 
 -----
+注：该项目已归档，对应的替代版本请参考：https://github.com/Zongsoft/Framework/blob/master/hosting/terminal
+-----
 
 这是 [**Zongsoft**](https://github.com/Zongsoft) 插件应用的终端宿主程序，一个普通的控制台程序。
 
